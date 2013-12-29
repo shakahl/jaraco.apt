@@ -16,11 +16,15 @@ class PackageName(six.text_type):
         return res
 
 def parse_new_packages(aptitude_output, include_automatic=False):
+    """
+    Given the output from an aptitude command, determine which packages are
+    newly-installed.
+    """
     pat = r'^The following NEW packages will be installed:[\r\n]+(.*?)[\r\n]\w'
     matcher = re.search(pat, aptitude_output, re.DOTALL | re.MULTILINE)
     if not matcher: return []
     new_pkg_text = matcher.group(1)
     raw_names = re.findall(r'[\w{}\.+-]+', new_pkg_text)
-    all_packages = map(PackageName.from_aptitude, raw_names)
+    all_packages = list(map(PackageName.from_aptitude, raw_names))
     manual_packages = [pack for pack in all_packages if not pack.automatic]
     return all_packages if include_automatic else manual_packages
