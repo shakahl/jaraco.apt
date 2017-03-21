@@ -1,3 +1,8 @@
+1.2
+===
+
+Refresh project skeleton.
+
 1.1
 ===
 
