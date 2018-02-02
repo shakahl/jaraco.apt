@@ -1,3 +1,8 @@
+1.3
+===
+
+Refresh package metadata (skeleton).
+
 1.2
 ===
 
