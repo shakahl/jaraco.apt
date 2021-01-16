@@ -7,6 +7,7 @@ import six
 
 class PackageName(six.text_type):
     """A package name possibly with other attributes"""
+
     @classmethod
     def from_apt(cls, name):
         automatic = name.endswith('{a}')

@@ -22,5 +22,4 @@ def test_parse_new_packages():
 def test_parse_new_packages_include_automatic():
     pkgs = apt.parse_new_packages(sample_output, include_automatic=True)
     assert not any('stuff' in pkg.lower() for pkg in pkgs)
-    assert pkgs == [
-        'abc', 'def', 'ghi', 'jk', 'lmno', 'pqwerty', 'xyz', 'g++']
+    assert pkgs == ['abc', 'def', 'ghi', 'jk', 'lmno', 'pqwerty', 'xyz', 'g++']
