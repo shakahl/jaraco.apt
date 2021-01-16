@@ -1,15 +1,20 @@
 .. image:: https://img.shields.io/pypi/v/jaraco.apt.svg
-   :target: https://pypi.org/project/jaraco.apt
+   :target: `PyPI link`_
 
 .. image:: https://img.shields.io/pypi/pyversions/jaraco.apt.svg
+   :target: `PyPI link`_
 
-.. image:: https://img.shields.io/travis/jaraco/jaraco.apt/master.svg
-   :target: https://travis-ci.org/jaraco/jaraco.apt
+.. _PyPI link: https://pypi.org/project/jaraco.apt
 
-.. .. image:: https://img.shields.io/appveyor/ci/jaraco/jaraco-apt/master.svg
-..    :target: https://ci.appveyor.com/project/jaraco/jaraco-apt/branch/master
+.. image:: https://github.com/jaraco/jaraco.apt/workflows/Automated%20Tests/badge.svg
+   :target: https://github.com/jaraco/jaraco.apt/actions?query=workflow%3A%22Automated+Tests%22
+   :alt: Automated Tests
 
-.. image:: https://readthedocs.org/projects/jaracoapt/badge/?version=latest
-   :target: https://jaracoapt.readthedocs.io/en/latest/?badge=latest
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Code style: Black
+
+.. .. image:: https://readthedocs.org/projects/skeleton/badge/?version=latest
+..    :target: https://skeleton.readthedocs.io/en/latest/?badge=latest
 
 Support module for `Debian APT <https://wiki.debian.org/Apt>`_.
