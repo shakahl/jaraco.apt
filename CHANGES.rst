@@ -1,3 +1,8 @@
+v2.1.0
+======
+
+Switched to PEP 420 for ``jaraco`` namespace.
+
 2.0
 ===
 
