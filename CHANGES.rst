@@ -1,3 +1,8 @@
+v2.2.0
+======
+
+Added ``dependency_context`` and ``run`` from ``jaraco.context``.
+
 v2.1.0
 ======
 
