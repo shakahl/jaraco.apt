@@ -1,5 +1,3 @@
-from __future__ import unicode_literals
-
 import re
 import os
 import argparse
@@ -9,10 +7,9 @@ import logging
 import contextlib
 
 import yg.lockfile
-import six
 
 
-class PackageName(six.text_type):
+class PackageName(str):
     """A package name possibly with other attributes"""
 
     @classmethod
